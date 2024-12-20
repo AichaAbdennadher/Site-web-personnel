@@ -1,0 +1,138 @@
+*{
+box-sizing: border-box;
+text-decoration: none;
+border: none;
+outline: none;
+font-family: "Poppins",sans-serif;
+scroll-behavior: smooth;
+}
+
+ html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+ }
+body{
+    background-color:rgb(255, 250, 247);
+     color: rgb(128, 142, 171);
+
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background:rgb(255, 250, 247);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.navbar a{
+font-size: 1.7rem;
+color:rgb(0, 28, 84);
+margin-left: 2rem;
+margin-right: 1rem;
+transition: .3s;
+font-weight: bold;
+}
+
+.navbar a:hover,.navbar a.active {
+    background: linear-gradient(to right, #6b7280, #3b82f6); /* Gray to Blue gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent; /* Fallback for unsupported browsers */
+}
+section{
+    min-height: 100vh;
+    padding: 10 rem 9% 2rem;
+    margin-left: 50px;
+
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home_contenu h3{
+font-size: 3.2rem;
+font-weight: 700;
+margin-left: 50px;
+}
+.home_contenu h3:nth-of-type(2){
+    margin-bottom: 2rem;
+
+
+}
+span{
+    color:rgb(0, 28, 84);
+    display: inline-block; /* Pour permettre l'animation */
+    animation: gradientColor 5s linear infinite; /* Appliquer l'animation */
+    font-weight: bold; /* Mettre le texte en gras */
+}
+
+
+.home_contenu h1{
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-left: 50px;
+
+}
+.home_contenu p{
+    font-size: 1.6rem;
+    margin-left: 50px;
+
+   
+}
+.home-img img{
+    width: 90vh;
+    margin-left: 50px;
+
+}
+.social_media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid rgb(0, 28, 84) ;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: rgb(0, 28, 84) ;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+
+
+}
+.social_media a:hover{
+background-color: rgb(0, 28, 84) ;
+color: rgb(255, 250, 247);
+box-sizing: 0 0 1rem  rgb(0, 28, 84) ;
+}
+
+.social_media{
+    margin-left: 50px;
+
+}
+
+.btnAcceuil {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: rgb(0, 28, 84);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem rgb(0, 28, 84);
+    font-size: 1.6rem;
+    color: rgb(255, 250, 247);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+    margin-left: 50px;
+}
+.btnAcceuil:hover{
+    box-shadow: none;
+}
+
+  

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site web personnel</title>
+    <link rel="stylesheet" href="../css/style1.css">
+    <style>
+        /* Ajout de styles basiques pour le tableau en cas d'absence de CSS */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 18px;
+            text-align: left;
+        }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+        }
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        table tr:hover {
+            background-color: #f1f1f1;
+        }
+        table th {
+            background-color: #f2f2f2;
+            color: black;
+        }
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <nav class="navbar">
+        <a href="../index.html">Accueil</a>
+        <a href="Formation.html">Formation</a>
+        <a href="competences.html">Compétences</a>
+        <a href="exp.html">Expérience</a>
+        <a href="certification.html">Certification</a>
+        <a href="projet.html">Projets</a>
+        <a href="soft_skills.html">Soft skills</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="iit.html">Témoignage sur l'IIT</a>
+    </nav>
+</header>
+
+<section class="about" id="about">
+    <h2 class="heading bg-clip-text text-transparent bg-gradient-to-r from-gray-500 to-blue-500">
+        Mon témoignage sur l'IIT
+    </h2>
+    <div class="about-content">
+        <img src="../images/download.jpg" alt="">
+        <p>
+            Pour moi, IIIT propose des cours qui représentent une véritable opportunité pour les étudiants en quête d'excellence académique et professionnelle. Les professeurs, dotés d'une grande expertise et d'une pédagogie remarquable, créent un environnement d'apprentissage à la fois stimulant et bienveillant. Toujours à l'écoute des besoins des étudiants, ils offrent un accompagnement personnalisé pour garantir une maîtrise approfondie des matières enseignées. En outre, IIIT met à disposition des ressources modernes et des infrastructures de qualité, favorisant un apprentissage pratique et enrichissant. Cette alliance entre un enseignement de qualité et un encadrement attentif fait de IIIT une institution exemplaire pour réussir ses études.
+        </p>
+    </div>
+    <h3>Mon expérience en 1ère année génie informatique</h3>
+    <p>Au cours de cette année...</p>
+</section>
+
+<section class="p-6 bg-white">
+    <table class="table-auto w-full border border-gray-400 shadow-lg rounded-md overflow-hidden">
+        <tbody class="bg-gray-100">
+            <tr class="hover:bg-gray-200 transition">
+                <td class="border border-gray-300 p-4">
+                    <h3 class="text-lg font-semibold">Théâtre Français</h3>
+                    <p class="text-gray-700">Participer au théâtre m'a permis de développer des compétences en communication, en expression orale, et en travail d'équipe, tout en découvrant la culture francophone de manière artistique.</p>
+                </td>
+                <td class="border border-gray-300 p-4">
+                    <video controls class="w-full rounded">
+                        <source src="video_path.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas la lecture vidéo.
+                    </video>
+                </td>
+            </tr>
+            <tr class="hover:bg-gray-200 transition">
+                <td class="border border-gray-300 p-4">
+                    <h3 class="text-lg font-semibold">Projet IoT : Système automatisé de détection de gaz et de flammes</h3>
+                    <p class="text-gray-700">Ce projet a consisté à développer un dispositif intelligent qui améliore la sécurité des habitations grâce à des capteurs intégrés et un système d'alerte en temps réel.</p>
+                </td>
+                <td class="border border-gray-300 p-4">
+                    <img src="image_path.jpg" alt="Image du projet IoT" class="w-full h-auto rounded shadow">
+                </td>
+            </tr>
+            <tr class="hover:bg-gray-200 transition">
+                <td class="border border-gray-300 p-4">
+                    <h3 class="text-lg font-semibold">Projet développement web : Création d’un site web personnel</h3>
+                    <p class="text-gray-700">Ce projet m'a permis de concevoir un site web personnel moderne et interactif en utilisant des technologies telles que HTML, CSS, et JavaScript, reflétant mes compétences en développement web.</p>
+                </td>
+                <td class="border border-gray-300 p-4">
+                    <img src="web_project_image.jpg" alt="Image du site web personnel" class="w-full h-auto rounded shadow">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+</body>
+</html>

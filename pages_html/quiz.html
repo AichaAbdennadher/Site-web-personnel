@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style1.css">
+    <script src="../js/projet.js"></script>
+    <title>site web personnel</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+
+<a href="../index.html" >Accueil</a>
+<a href="Formation.html">Formation</a>
+<a href="competences.html">Compétences  </a>
+<a href="exp.html">Experience </a>
+<a href="certification.html" >Certification</a>
+<a href="projet.html">Projets </a>
+<a href="soft_skills.html">Soft skills </a>
+<a href="quiz.html" class="active">Quiz</a>
+<a href="contact.html">Contact</a>
+<a href="iit.html">Témoignage sur l'IIT</a>
+</nav>
+</header>
+
+
+    <section class="education" id="education">
+        
+            <h2 class="heading bg-clip-text text-transparent bg-gradient-to-r from-gray-500 to-blue-500">
+                Quiz JavaScript
+                   <span class="animate scroll" style="--i:1;"></span>
+               </h2>  
+               
+               <img src="../images/bonchance.jpg" alt=""class="animated-image " style="width: 250px ;  margin-bottom: 30px; margin-top: 30px;">
+               <button id="startQuizBtn" class="startBtn" onclick="commencer()">Commencer</button>      
+    </section>
+     
+       
+   
+        <section class="container" id="container">
+            <form id="quizForm" > 
+
+            <h2 class="heading bg-clip-text text-transparent bg-gradient-to-r from-gray-500 to-blue-500">
+                Bienvenue au Quiz JavaScript 
+                <span class="animate scroll" style="--i:1;"></span>
+            </h2>
+
+                <div class="timer">
+                <span id="timer">200</span> s
+                </div>
+            
+                <div class="question" id="question1">
+                    <label for="question1a"><strong>1. Comment écrire "Hello World" dans une boîte de dialogue ?</strong></label><br><br>
+                    
+                    
+                    <button type="button" class="radio-btn">
+                        <input type="radio" name="question1" value="incorrect1" id="question1a" class="radio-input">
+                        alertBox("Hello World");
+                    </button><br>
+                    
+                   
+                    <button type="button" class="radio-btn" >
+                        <input type="radio" name="question1" value="correct" id="question1b" class="radio-input">
+                        alert("Hello World");
+                    </button><br>
+                    
+                    
+                    <button type="button" class="radio-btn" >
+                        <input type="radio" name="question1" value="incorrect2" id="question1c" class="radio-input">
+                        msgBox("Hello World");
+                    </button><br>
+                </div>
+                
+                        
+
+          <!-- Question 2 -->
+<div class="question" id="question2">
+    <label for="question2a"><strong>2. Comment appeler une fonction nommée "maFonction" ?</strong></label><br><br>
+    
+    <button type="button" class="radio-btn">
+        <input type="radio" name="question2" value="incorrect1" id="question2a" class="radio-input">
+        call maFonction()
+    </button><br>
+    
+    <button type="button" class="radio-btn">
+        <input type="radio" name="question2" value="incorrect2" id="question2b" class="radio-input">
+        call function maFonction()
+    </button><br>
+    
+    <button type="button" class="radio-btn">
+        <input type="radio" name="question2" value="correct" id="question2c" class="radio-input">
+        maFonction()
+    </button><br>
+</div>
+
+<!-- Question 3 -->
+<div class="question" id="question3">
+    <label for="question3a"><strong>3. Quelle est la méthode pour ajouter un élément à un tableau en JavaScript ?</strong></label><br><br>
+    
+    <button type="button" class="radio-btn">
+        <input type="radio" name="question3" value="incorrect1" id="question3a" class="radio-input">
+        addElement()
+    </button><br>
+    
+    <button type="button" class="radio-btn">
+        <input type="radio" name="question3" value="incorrect2" id="question3b" class="radio-input">
+        pushElement()
+    </button><br>
+    
+    <button type="button" class="radio-btn">
+        <input type="radio" name="question3" value="correct" id="question3c" class="radio-input">
+        push()
+    </button><br>
+</div>
+
+<!-- Question 4 -->
+<div class="question" id="question4">
+    <label for="question4a"><strong>4. Comment déclarer une variable en JavaScript ?</strong></label><br><br>
+    
+    <button type="button" class="radio-btn">
+        <input type="radio" name="question4" value="incorrect1" id="question4a" class="radio-input">
+        var monVariable
+    </button><br>
+    
+    <button type="button" class="radio-btn">
+        <input type="radio" name="question4" value="incorrect2" id="question4b" class="radio-input">
+        let monVariable
+    </button><br>
+    
+    <button type="button" class="radio-btn">
+        <input type="radio" name="question4" value="correct" id="question4c" class="radio-input">
+        let maVariable
+    </button><br>
+</div>
+
+<!-- Question 5 -->
+<div class="question" id="question5">
+    <label for="question5a"><strong>5. Comment vérifier si une variable est définie en JavaScript ?</strong></label><br><br>
+    
+    <button type="button" class="radio-btn">
+        <input type="radio" name="question5" value="incorrect1" id="question5a" class="radio-input">
+        if (variable == null)
+    </button><br>
+    
+    <button type="button" class="radio-btn">
+        <input type="radio" name="question5" value="correct" id="question5b" class="radio-input">
+        if (typeof variable !== 'undefined')
+    </button><br>
+    
+    <button type="button" class="radio-btn">
+        <input type="radio" name="question5" value="incorrect2" id="question5c" class="radio-input">
+        if (variable == undefined)
+    </button><br>
+</div>
+
+<!-- Question 6 -->
+<div class="question" id="question6">
+    <label for="question6a"><strong>6. Que fait la méthode "slice()" en JavaScript ?</strong></label><br><br>
+    
+    <button type="button" class="radio-btn">
+        <input type="radio" name="question6" value="incorrect1" id="question6a" class="radio-input">
+        Supprime un élément du tableau
+    </button><br>
+    
+    <button type="button" class="radio-btn">
+        <input type="radio" name="question6" value="correct" id="question6b" class="radio-input">
+        Extrait une portion d'un tableau ou d'une chaîne
+    </button><br>
+    
+    <button type="button" class="radio-btn">
+        <input type="radio" name="question6" value="incorrect2" id="question6c" class="radio-input">
+        Ajoute un élément à la fin du tableau
+    </button><br>
+</div>
+
+<!-- Question 7 -->
+<div class="question" id="question7">
+    <label for="question7a"><strong>7. Quel opérateur est utilisé pour vérifier l'égalité en JavaScript ?</strong></label><br><br>
+    
+    <button type="button" class="radio-btn">
+        <input type="radio" name="question7" value="incorrect1" id="question7a" class="radio-input">
+        =
+    </button><br>
+    
+    <button type="button" class="radio-btn">
+        <input type="radio" name="question7" value="correct" id="question7b" class="radio-input">
+        ==
+    </button><br>
+    
+    <button type="button" class="radio-btn">
+        <input type="radio" name="question7" value="incorrect2" id="question7c" class="radio-input">
+        ===
+    </button><br>
+</div>
+
+<!-- Question 8 -->
+<div class="question" id="question8">
+    <label for="question8a"><strong>8. Quel est le résultat de l'expression 5 + "5" en JavaScript ?</strong></label><br><br>
+    
+    <button type="button" class="radio-btn">
+        <input type="radio" name="question8" value="incorrect1" id="question8a" class="radio-input">
+        10
+    </button><br>
+    
+    <button type="button" class="radio-btn">
+        <input type="radio" name="question8" value="correct" id="question8b" class="radio-input">
+        55
+    </button><br>
+    
+    <button type="button" class="radio-btn">
+        <input type="radio" name="question8" value="incorrect2" id="question8c" class="radio-input">
+        Erreur
+    </button><br>
+</div>
+<!-- Question 9 -->
+<div class="question" id="question9">
+    <label for="question9a"><strong>9. Quel est le type de données de "true" en JavaScript ?</strong></label><br><br>
+
+    <button type="button" class="radio-btn">
+        <input type="radio" name="question9" value="incorrect1" id="question9a" class="radio-input">
+        String
+    </button><br>
+
+    <button type="button" class="radio-btn">
+        <input type="radio" name="question9" value="correct" id="question9b" class="radio-input">
+        Boolean
+    </button><br>
+
+    <button type="button" class="radio-btn">
+        <input type="radio" name="question9" value="incorrect2" id="question9c" class="radio-input">
+        Number
+    </button><br>
+</div>
+
+<!-- Question 10 -->
+<div class="question" id="question10">
+    <label for="question10a"><strong>10. Comment écrire une fonction anonyme en JavaScript ?</strong></label><br><br>
+
+    <button type="button" class="radio-btn">
+        <input type="radio" name="question10" value="incorrect1" id="question10a" class="radio-input">
+        function() {}
+    </button><br>
+
+    <button type="button" class="radio-btn">
+        <input type="radio" name="question10" value="correct" id="question10b" class="radio-input">
+        () => {}
+    </button><br>
+
+    <button type="button" class="radio-btn">
+        <input type="radio" name="question10" value="incorrect2" id="question10c" class="radio-input">
+        function() = {}
+    </button><br>
+</div>
+
+<footer class="footer">
+ 
+    <!-- Progression des questions -->
+    <div class="progression">
+        <span id="questionProgress">1</span> sur  10 Questions
+    </div>
+    <div class="navigation">
+        <!-- Boutons Précédent et Suivant -->
+        <button type="button" id="prevBtn" class="sBtn" onclick="prevQuestion()">Précédent</button>
+       
+
+        <button type="button" id="nextBtn" class="sBtn" onclick="nextQuestion()">Suivant</button>
+        <button type="button" id="submitBtn" class="sBtn" style="display:none;" onclick="calculateResult()">Valider</button>
+    </div>
+</footer>
+ </form>    
+ <div class="results" id="results" style="display:none;">
+    <h2 class="heading bg-clip-text text-transparent bg-gradient-to-r from-gray-500 to-blue-500">
+        Résultat du Quiz JavaScript
+        <span class="animate scroll" style="--i:1;"></span>
+    </h2>
+    <div class="pourcentage">
+        <div class="cercle" style="position: relative;"> 
+
+            <svg class="progress-ring" width="300" height="300">
+                <!-- Cercle de fond -->
+                <circle class="progress-ring__circle" 
+                    stroke="#ddd" 
+                    stroke-width="20" 
+                    fill="transparent" 
+                    r="140" 
+                    cx="150" 
+                    cy="150" />
+                <!-- Cercle de progression -->
+                <circle class="progress-ring__circle-fg" 
+                    stroke="rgb(164, 189, 240)" 
+                    stroke-width="20" 
+                    fill="transparent" 
+                    r="140" 
+                    cx="150" 
+                    cy="150" 
+                    style="stroke-dasharray: 880; stroke-dashoffset: 880;" />
+            </svg>
+            <div class="score-text">
+                <span id="percentageText">0%</span>
+            </div>
+        </div>
+    </div>
+    <p id="score" class="score"></p>
+    <div class="button-container">
+        <button id="showAnswersBtn" class="ssBtn" onclick="reponse()">Voir les réponses correctes</button>
+        <!-- <button id="retryBtn" class="ssBtn" onclick="essayer()">Essayer à nouveau</button> -->
+      </div>
+      
+</div> 
+ 
+</div>
+
+<!-- Réponses -->
+<div class="reponse" id="reponses" style="display:none;">
+    <h2 class="heading bg-clip-text text-transparent bg-gradient-to-r from-gray-500 to-blue-500">
+        Réponses Correctes
+        <span class="animate scroll" style="--i:1;"></span>
+    </h2>
+   
+</div>
+</section>
+        </body>
+        </html>
+        
