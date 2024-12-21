@@ -160,6 +160,7 @@ function reponse() {
             ? "&nbsp;&nbsp;Votre réponse&nbsp;&nbsp;"
             : "&nbsp;&nbsp;Réponse correcte&nbsp;&nbsp;";
         optionButton.appendChild(correctSpan);
+        //pour recuprer le buton qui a la reponse de l utilisateur 
       } else if (userAnswerValue === option.value) {
         // Mauvaise réponse sélectionnée
         optionButton.classList.add("incorrect");

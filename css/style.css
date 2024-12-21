@@ -116,7 +116,7 @@ span{
     color: rgb(0, 28, 84) ;
     margin: 3rem 1.5rem 3rem 0;
     transition: .5s ease;
-
+    /* La fonction de timing contrôle la vitesse du changement au cours du temps. */
 
 }
 .social_media a:hover{
