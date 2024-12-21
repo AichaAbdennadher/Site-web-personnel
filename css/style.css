@@ -1,15 +1,20 @@
-*{
+*{ 
+    /* Tous les éléments HTML. */
 box-sizing: border-box;
 text-decoration: none;
 border: none;
 outline: none;
+/* Supprime le contour (outline) qui apparaît autour d'un élément lorsque celui-ci est sélectionné ou focusé. */
 font-family: "Poppins",sans-serif;
 scroll-behavior: smooth;
+/* Rend les défilements (scrolling) fluides lorsqu'un utilisateur clique sur un lien d'ancrage (<a href="#section">) */
 }
 
- html{
+ html{ 
+    /* Uniquement l'élément racine <html>. */
+
     font-size: 62.5%;
-    overflow-x: hidden;
+    overflow-x: hidden; /* empêche le défilement (largeur fo9 lzm) horizontal. */
  }
 body{
     background-color:rgb(255, 250, 247);
@@ -28,6 +33,10 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    /* Cette propriété détermine l'ordre de superposition (ou profondeur) d'un élément.
+
+    Un z-index élevé (ex. 100) signifie que cet élément sera affiché au-dessus des éléments avec un z-index plus bas.
+    Si deux éléments ont le mê */
 }
 .navbar a{
 font-size: 1.7rem;
@@ -39,10 +48,10 @@ font-weight: bold;
 }
 
 .navbar a:hover,.navbar a.active {
-    background: linear-gradient(to right, #6b7280, #3b82f6); /* Gray to Blue gradient */
+    background: linear-gradient(to right, #6b7280, #3b82f6); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: transparent; /* Fallback for unsupported browsers */
+    color: transparent; 
 }
 section{
     min-height: 100vh;
@@ -71,9 +80,7 @@ margin-left: 50px;
 }
 span{
     color:rgb(0, 28, 84);
-    display: inline-block; /* Pour permettre l'animation */
-    animation: gradientColor 5s linear infinite; /* Appliquer l'animation */
-    font-weight: bold; /* Mettre le texte en gras */
+    font-weight: bold; 
 }
 
 
@@ -99,6 +106,7 @@ span{
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    /* aligner des éléments verticalement lorsqu'on utilise flexbox ou grid. */
     width: 4rem;
     height: 4rem;
     background: transparent;
@@ -140,9 +148,9 @@ box-sizing: 0 0 1rem  rgb(0, 28, 84) ;
 }
 
 .home_cont {
-    max-width: 60%; /* Réduire la largeur du texte */
-    margin: 0 auto; /* Centrer le contenu */
-    padding: 20px; /* Espacement interne réduit */
+    max-width: 60%; 
+    margin: 0 auto;
+    padding: 20px; 
 }
 
 

@@ -171,59 +171,6 @@ h2{
     height: 40px;
   }  
 
-
-
-
-
-
-
-
-
-
-
-
-/* 
-.home-content .text-animate {
-    position: relative;
-    width: 32.8rem;
-}
-
-.home-content .text-animate h3 {
-    font-size: 3.2rem;
-    font-weight: 700;
-    color: transparent;
-    -webkit-text-stroke: .7px rgb(0, 28, 84);
-    background-image: linear-gradient(rgb(0, 28, 84),rgb(0, 28, 84));
-    background-repeat: no-repeat;
-    -webkit-background-clip: text;
-    background-position: -33rem 0;
-}
-
-.home.show-animate .home-content .text-animate h3 {
-    animation: homeBgText 6s linear infinite;
-    animation-delay: 2s;
-}
-
-.home-content .text-animate h3::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    border-right: 2px solid rgb(0, 28, 84);
-    z-index: -1;
-    animation: homeCursorText 6s linear infinite;
-    animation-delay: 2s;
-}
-
-.home.show-animate .home-content .text-animate h3::before {
-    animation: homeCursorText 6s linear infinite;
-    animation-delay: 2s;
-} */
-
-
-
 .btn-box {
     position: relative;
     display: flex;
@@ -417,12 +364,13 @@ span {
 
 
 
-/*------------------------------------------------education section---------------------------------------------------- */
+/*---------------------------------------------////education section---------------------------------------------------- */
 
 .education {
     display: flex;
+    /* Permet d'organiser facilement les enfants de .education dans une seule ligne ou colonne, */
     justify-content: center;
-    align-items: center;
+    align-items: center; /* centree verticalement */
     flex-direction: column;
     min-height: 5rem;
     padding-bottom: 5rem;
@@ -431,7 +379,9 @@ span {
 .education .education-row {
    display: flex;
    flex-wrap: wrap;
-   gap: 5rem;
+   /* Permet aux enfants de .education-row (par exemple, des colonnes ou des cartes) de passer à une nouvelle ligne si la largeur totale dépasse celle du conteneur
+   gap: 5rem; */
+   /* Définit un espacement uniforme de 5 rem entre les éléments enfants, aussi bien horizontalement que verticalement. */
 }
 
 .education-row .education-column {
@@ -441,6 +391,7 @@ span {
 .education-column .title {
     position: relative;
     display: inline-block;
+    /* L'élément sera traité comme un bloc tout en restant aligné avec les autres contenus inline. */
     font-size: 2.5rem;
     margin: 0 0 1.5rem 2rem;
 }
@@ -453,12 +404,13 @@ span {
 
 .education-box .education-content {
     position: relative;
+    /* Permet de positionner l'élément relativement à sa position normale. */
     padding-left: 2rem;
     
 }
 .education-box .education-content video {
     display: block;      /* Pour le centrer en utilisant margin */
-    width: 70%;          /* Ajuste la largeur selon vos besoins (par exemple 80%) */
+    width: 70%;          
     height: auto;        /* Maintient le ratio d'aspect de la vidéo */
     margin: 20px  auto 0;      /* Centre horizontalement */
     z-index: 2;          /* Assure que la vidéo est au-dessus des autres éléments */
@@ -487,12 +439,15 @@ span {
 .education-content .content::before {
     content: '';
     position: absolute;
+    /* Nécessite que le parent .content ait un position: relative; pour que le positionnement absolu soit relatif à ce parent. */
     top: 0;
     left: 0;
     width: 0;
     height: 100%;
     background: rgb(213, 214, 216);
     z-index: -1;
+    /* Positionne le pseudo-élément en arrière-plan, derrière le contenu visible de .content. */
+
     transition: .5s;
 }
 
@@ -508,29 +463,6 @@ span {
     z-index: 10;
     
 }
-
-/* .education-content .content.social_media a{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 4rem;
-    height: 4rem;
-    background: transparent;
-    border: .2rem solid rgb(0, 28, 84) ;
-    border-radius: 40%;
-    font-size: 2rem;
-    color: rgb(0, 28, 84) ;
-    margin: 3rem 1.5rem 3rem 0;
-    transition: .5s ease;
-
-
-}
-.education-content .content.social_media a:hover{
-background-color: rgb(0, 28, 84) ;
-color: rgb(255, 240, 247);
-box-sizing: 0 0 1rem  rgb(0, 28, 84) ;
-} */
-
 .education-content .content .year i {
     padding-right: .5rem;
 }
@@ -1309,9 +1241,48 @@ box-sizing: 0 0 1rem  rgb(0, 28, 84) ;
         -webkit-background-clip: text; /* Appliquer le dégradé au texte */
         color: transparent; /* Rendre la couleur de texte transparente pour que le dégradé soit visible */
     }
+    table {
+        width: 100%; /* Augmenter la largeur de la table */
+        border-collapse: collapse;
+        margin: 40px 0;
+        font-size: 20px;
+        text-align: left;
+        line-height: 1.5;
+    }
     
+    
+    
+    table th, table td {
+        border: 3px solid #ddd; /* Augmenter la largeur de la bordure */
+        padding: 70px; /* Augmenter l'espacement interne des cellules */
+    }
+    
+    table tr:nth-child(even) {
+        background-color: #f9f9f9; /* Couleur de fond pour les lignes paires */
+    }
+    table td:first-child {
+        width: 80%; /* Augmenter la largeur de la première colonne */
+        padding: 70px; /* Ajuster l'espacement interne de la cellule */
+    }
+    
+    table tr:hover {
+        background-color: #f1f1f1; /* Couleur de fond pour les lignes au survol */
+    }
+    
+    
+    
+            video {
+                max-width: 90%;
+                height: auto;
+                margin-right: 300px;
+    
+            }
+            img {
+                max-width: 90%;
+                height: auto;
+            }    
 
-/* about.html section services */
+/* section services */
 
 .services {
     min-height: auto;
@@ -1336,7 +1307,10 @@ box-sizing: 0 0 1rem  rgb(0, 28, 84) ;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    /* Les éléments s'organisent sur plusieurs lignes si nécessaire, s'ajustant dynamiquement pour s'adapter au conteneu */
     gap: 2rem;
+    /* Définit un espacement uniforme de 2 rem entre les éléments enfants du conteneur Flexbox. */
+
 }
 
 .services-container .services-box {
@@ -1349,7 +1323,7 @@ box-sizing: 0 0 1rem  rgb(0, 28, 84) ;
     transition: .5s ease;
    background-color:  rgb(223, 220, 219);
 }
-
+/* aimation */
 .services-container .services-box:hover {
     border-color: rgb(0, 28, 84);
     transform: scale(1.02);
@@ -1445,7 +1419,6 @@ box-sizing: 0 0 1rem  rgb(0, 28, 84) ;
     margin-bottom: 20px; /* Espace sous l'image */
     animation: bounce 2s infinite ease-in-out; /* Animation rebond */
 }
-
 /* Définition de l'animation */
 @keyframes bounce {
     0%, 100% {
@@ -1456,19 +1429,8 @@ box-sizing: 0 0 1rem  rgb(0, 28, 84) ;
     }
 }
 
-/* .Quiz{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-align-items: center;
-}
-.Quiz-contenu{
-    max-width: 600px;
-    display: flex;
-align-items: center;
-flex-direction: column;
-} */
+
+
 .container {
   
     text-align: center;
