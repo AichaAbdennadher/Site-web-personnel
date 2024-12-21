@@ -384,10 +384,18 @@ span {
    border: .2rem solid var(--main-color); 
 }
 
- 
 
-.about-content {
+.iit-img img {
+    height: auto; /* La hauteur de l'image sera ajustée automatiquement pour conserver les proportions */
+    max-width: 600%; /* Si vous voulez que l'image dépasse légèrement de son conteneur */
+    object-fit: cover; /* Cette propriété permet à l'image de couvrir tout l'espace sans déformer */
+    margin-right: 240px;
+}
+.about-content img {
    text-align: center;
+   max-width: 100%;
+   height: auto;
+   margin-left: 80px;
 }
 
 .about-content h3 {

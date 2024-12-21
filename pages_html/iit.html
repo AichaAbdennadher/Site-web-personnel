@@ -6,34 +6,44 @@
     <title>site web personnel</title>
     <link rel="stylesheet" href="../css/style1.css">
     <style>
-        /* Ajout de styles basiques pour le tableau en cas d'absence de CSS */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            font-size: 18px;
-            text-align: left;
-        }
-        table th, table td {
-            border: 1px solid #ddd;
-            padding: 12px;
-        }
-        table tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-        table tr:hover {
-            background-color: #f1f1f1;
-        }
-        table th {
-            background-color: #f2f2f2;
-            color: black;
-        }
+table {
+    width: 100%; /* Augmenter la largeur de la table */
+    border-collapse: collapse;
+    margin: 40px 0;
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+
+
+table th, table td {
+    border: 3px solid #ddd; /* Augmenter la largeur de la bordure */
+    padding: 70px; /* Augmenter l'espacement interne des cellules */
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Couleur de fond pour les lignes paires */
+}
+table td:first-child {
+    width: 80%; /* Augmenter la largeur de la première colonne */
+    padding: 70px; /* Ajuster l'espacement interne de la cellule */
+}
+
+table tr:hover {
+    background-color: #f1f1f1; /* Couleur de fond pour les lignes au survol */
+}
+
+
+
         video {
-            max-width: 100%;
+            max-width: 90%;
             height: auto;
+            margin-right: 300px;
+
         }
         img {
-            max-width: 100%;
+            max-width: 90%;
             height: auto;
         }
     </style>
@@ -55,51 +65,55 @@
     </nav>
 </header>
 
-<section class="about" id="about">
-    <h2 class="heading bg-clip-text text-transparent bg-gradient-to-r from-gray-500 to-blue-500">
+<section class="education" id="education">
+    
+    <h2 class="heading font-bold bg-clip-text text-transparent bg-gradient-to-r from-gray-500 to-blue-500">
         Mon témoignage sur l'IIT
-    </h2>
-    <div class="about-content">
+    </h2>   
+    <div style="display: flex; gap: 70px;"> 
+      
+      <p  style=" font-size: 16px; /* Réduire la taille du texte */
+    line-height: 1.5; /* Ajuster l'interligne pour améliorer la lisibilité */ color: rgb(128, 142, 171);">Pour moi, IIIT propose des cours qui représentent une véritable opportunité pour les étudiants en quête d'excellence académique et professionnelle. Les professeurs, dotés d'une grande expertise et d'une pédagogie remarquable, créent un environnement d'apprentissage à la fois stimulant et bienveillant.  En outre, IIIT met à disposition des ressources modernes et des infrastructures de qualité.</p>       
+      <div class="iit-img">
         <img src="../images/download.jpg" alt="">
-        <p>
-            Pour moi, IIIT propose des cours qui représentent une véritable opportunité pour les étudiants en quête d'excellence académique et professionnelle. Les professeurs, dotés d'une grande expertise et d'une pédagogie remarquable, créent un environnement d'apprentissage à la fois stimulant et bienveillant. Toujours à l'écoute des besoins des étudiants, ils offrent un accompagnement personnalisé pour garantir une maîtrise approfondie des matières enseignées. En outre, IIIT met à disposition des ressources modernes et des infrastructures de qualité, favorisant un apprentissage pratique et enrichissant. Cette alliance entre un enseignement de qualité et un encadrement attentif fait de IIIT une institution exemplaire pour réussir ses études.
-        </p>
     </div>
-    <h3>Mon expérience en 1ère année génie informatique</h3>
-    <p>Au cours de cette année...</p>
+
+ </div>
+
 </section>
 
 <section class="p-6 bg-white">
+    <h3 style="color: rgb(21, 179, 231); margin-left: -60px;">- Mon expérience en 1ere génie informatique:</h3>
     <table class="table-auto w-full border border-gray-400 shadow-lg rounded-md overflow-hidden">
         <tbody class="bg-gray-100">
             <tr class="hover:bg-gray-200 transition">
                 <td class="border border-gray-300 p-4">
-                    <h3 class="text-lg font-semibold">Théâtre Français</h3>
-                    <p class="text-gray-700">Participer au théâtre m'a permis de développer des compétences en communication, en expression orale, et en travail d'équipe, tout en découvrant la culture francophone de manière artistique.</p>
+                    <h3 class="text-lg font-semibold">- Théâtre Français</h3>
+                    <p class="text-gray-700" style="margin-top: 10px;  ">Participer au théâtre m'a permis de développer des compétences en communication, en expression orale, et en travail d'équipe, tout en découvrant la culture francophone de manière artistique.</p>
                 </td>
                 <td class="border border-gray-300 p-4">
                     <video controls class="w-full rounded">
-                        <source src="video_path.mp4" type="video/mp4">
+                        <source src="../videos/fr.mp4" type="video/mp4">
                         Votre navigateur ne supporte pas la lecture vidéo.
                     </video>
                 </td>
             </tr>
             <tr class="hover:bg-gray-200 transition">
                 <td class="border border-gray-300 p-4">
-                    <h3 class="text-lg font-semibold">Projet IoT : Système automatisé de détection de gaz et de flammes</h3>
-                    <p class="text-gray-700">Ce projet a consisté à développer un dispositif intelligent qui améliore la sécurité des habitations grâce à des capteurs intégrés et un système d'alerte en temps réel.</p>
+                    <h3 class="text-lg font-semibold">- Projet IoT : Système automatisé de détection de gaz et de flammes</h3>
+                    <p class="text-gray-700"  style="margin-top: 10px;">Ce projet a consisté à développer un dispositif intelligent qui améliore la sécurité des habitations grâce à des capteurs intégrés et un système d'alerte en temps réel.</p>
                 </td>
                 <td class="border border-gray-300 p-4">
-                    <img src="image_path.jpg" alt="Image du projet IoT" class="w-full h-auto rounded shadow">
+                    <img src="../images/iot.jpg" alt="Image du projet IoT" class="w-full h-auto rounded shadow">
                 </td>
             </tr>
             <tr class="hover:bg-gray-200 transition">
                 <td class="border border-gray-300 p-4">
-                    <h3 class="text-lg font-semibold">Projet développement web : Création d’un site web personnel</h3>
-                    <p class="text-gray-700">Ce projet m'a permis de concevoir un site web personnel moderne et interactif en utilisant des technologies telles que HTML, CSS, et JavaScript, reflétant mes compétences en développement web.</p>
+                    <h3 class="text-lg font-semibold">- Projet développement web : Création d’un site web personnel</h3>
+                    <p class="text-gray-700"style="margin-top: 10px;">Ce projet m'a permis de concevoir un site web personnel moderne et interactif en utilisant des technologies telles que HTML, CSS, et JavaScript, reflétant mes compétences en développement web.</p>
                 </td>
                 <td class="border border-gray-300 p-4">
-                    <img src="web_project_image.jpg" alt="Image du site web personnel" class="w-full h-auto rounded shadow">
+                    <img src="../images/Capture .png" alt="Image du site web personnel" class="w-full h-auto rounded shadow" style="max-width: 110%;">
                 </td>
             </tr>
         </tbody>

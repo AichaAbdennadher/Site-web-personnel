@@ -60,6 +60,10 @@ font-size: 3.2rem;
 font-weight: 700;
 margin-left: 50px;
 }
+.home_cont h3{
+    font-size: 3.2rem;
+    font-weight: 700;
+    }
 .home_contenu h3:nth-of-type(2){
     margin-bottom: 2rem;
 
@@ -135,4 +139,14 @@ box-sizing: 0 0 1rem  rgb(0, 28, 84) ;
     box-shadow: none;
 }
 
-  
+.home_cont {
+    max-width: 60%; /* Réduire la largeur du texte */
+    margin: 0 auto; /* Centrer le contenu */
+    padding: 20px; /* Espacement interne réduit */
+}
+
+
+
+
+
+
